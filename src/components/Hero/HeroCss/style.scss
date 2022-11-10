@@ -1,0 +1,78 @@
+$colorDark: rgb(26, 26, 26);
+$colorBlue: rgb(59, 202, 186);
+$colorWhite: rgb(232, 232, 232);
+$colorOrange: rgb(212, 154, 78);
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      font-size: 6rem;
+      font-weight: 800;
+      background: $colorWhite;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.3rem;
+      color: $colorWhite;
+      padding: 0.5rem 0 2rem 0;
+    }
+
+    .show {
+      background: $colorWhite;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: $colorDark;
+    }
+
+    .hide {
+        display: none
+    }
+  }
+}
+
+.hero-mid {
+    @extend .hero;
+    height: 80vh;
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+  .hero .hero-text {
+    h1 {
+      padding: 10px 20px;
+    }
+    p {
+        font-size: 1.1rem;
+        padding: 0 0 2rem 0;
+    }
+    .show {
+        font-size: 1rem;
+        padding: .6rem 1.1rem;
+    }
+  }
+}

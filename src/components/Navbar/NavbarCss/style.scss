@@ -1,0 +1,148 @@
+$colorDark: rgb(26, 26, 26);
+$colorBlue: rgb(59, 202, 186);
+$colorWhite: rgb(232, 232, 232);
+$colorOrange: rgb(212, 154, 78);
+
+.navbar-items {
+  background-color: $colorWhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  width: 95%;
+  height: 80px;
+  border-radius: 15px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 9999;
+  .menu-icons {
+    display: none;
+  }
+
+  .navbar-logo {
+    color: $colorDark;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .nav-links {
+      color: $colorDark;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 0.7rem 1rem;
+      font-size: 1.5rem;
+      white-space: nowrap;
+
+      i {
+        padding-right: 10px;
+      }
+
+      &:hover {
+        background-color: $colorBlue;
+        color: $colorWhite;
+        border-radius: 5px;
+        transition: all 0.2s;
+      }
+    }
+
+    .nav-links-mobile {
+      display: none;
+    }
+
+    button {
+      padding: 0.5rem;
+      white-space: nowrap;
+      border-radius: 0.3rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: $colorDark;
+        color: $colorWhite;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .navbar-items {
+    z-index: 99;
+
+    .menu-icons {
+      display: block;
+      cursor: pointer;
+
+      i {
+        font-size: 1.5rem;
+        color: $colorDark;
+      }
+    }
+
+    .nav-menu {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: stretch !important;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: $colorWhite;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      opacity: 0;
+      padding: 100px 0 30px 0;
+      margin: 0;
+      border-radius: 15px;
+
+      button {
+        display: none;
+      }
+
+      .nav-links-mobile {
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: auto;
+        border-radius: 5px;
+        width: 80%;
+        background-color: $colorBlue;
+        color: $colorWhite;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+
+      .nav-links {
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 1.4rem 0;
+
+        &:hover {
+          background-color: $colorOrange;
+          color: black;
+          transition: none;
+        }
+      }
+    }
+
+    .nav-menu.active {
+      left: 0;
+      opacity: 1;
+      z-index: -1;
+      transition: 0.3s;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.trip {
+  margin: 4rem 6rem;
+  color: #2a2a2a;
+  text-align: center; }
+  .trip h1 {
+    font-size: 3rem; }
+  .trip .tripcard {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between; }
+    .trip .tripcard .t-card {
+      width: 32%;
+      text-align: start;
+      box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      cursor: pointer;
+      padding: 1rem; }
+      .trip .tripcard .t-card .t-image {
+        height: 300px;
+        overflow: hidden;
+        border-radius: 7px; }
+        .trip .tripcard .t-card .t-image img {
+          width: 100%;
+          height: 100%;
+          transition: 0.3s; }
+        .trip .tripcard .t-card .t-image:hover img {
+          transform: scale(1.1); }
+      .trip .tripcard .t-card h4 {
+        font-size: 1.3rem;
+        padding: 0.9rem 0 0.2rem 0; }
+
+@media screen and (max-width: 850px) {
+  .trip {
+    margin: 4rem 2rem; }
+    .trip .tripcard {
+      flex-direction: column; }
+      .trip .tripcard .t-card {
+        width: 100%;
+        margin-bottom: 1.5rem; }
+        .trip .tripcard .t-card .t-image {
+          height: 400px; } }
+
+/*# sourceMappingURL=style.css.map */

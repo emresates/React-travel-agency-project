@@ -1,0 +1,75 @@
+$colorDark: rgb(26, 26, 26);
+$colorBlue: rgb(59, 202, 186);
+$colorWhite: rgb(232, 232, 232);
+$colorOrange: rgb(212, 154, 78);
+
+.footer {
+  padding: 4rem 6rem;
+  background: $colorDark;
+  color: $colorWhite;
+
+  .top {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    i {
+      color: $colorWhite;
+      font-size: 2rem;
+      margin-left: 1rem;
+
+      &:hover {
+        color: $colorBlue;
+      }
+    }
+  }
+
+  .bottom {
+    padding: 2rem;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        font-size: 1.3rem;
+        padding: 1rem 0 0.8rem 0;
+      }
+
+      a {
+        color: $colorWhite;
+        padding-bottom: 0.4rem;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .footer {
+    padding: 4rem 2rem;
+
+    .top {
+      i {
+        margin: 1rem 1rem 0 0;
+      }
+    }
+
+    .bottom div {
+      width: 50%;
+      h4 {
+        font-size: 2rem;
+      }
+
+      a {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

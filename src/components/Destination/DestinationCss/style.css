@@ -1,0 +1,52 @@
+.destination {
+  margin: 4rem 6rem;
+  text-align: center; }
+  .destination h1 {
+    font-size: 4rem; }
+  .destination .first-destination, .destination .first-destination-reverse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem; }
+    .destination .first-destination .des-text, .destination .first-destination-reverse .des-text {
+      width: 45%;
+      text-align: start;
+      font-size: 1.1rem; }
+      .destination .first-destination .des-text h2, .destination .first-destination-reverse .des-text h2 {
+        padding-bottom: 1rem; }
+    .destination .first-destination .images, .destination .first-destination-reverse .images {
+      position: relative;
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      z-index: -99; }
+      .destination .first-destination .images img, .destination .first-destination-reverse .images img {
+        width: 49%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 5px;
+        box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.2); }
+        .destination .first-destination .images img:nth-child(2), .destination .first-destination-reverse .images img:nth-child(2) {
+          position: absolute;
+          top: -10%;
+          right: 0; }
+  .destination .first-destination-reverse {
+    flex-direction: row-reverse; }
+
+@media screen and (max-width: 850px) {
+  .destination {
+    margin: 4rem 2rem; }
+    .destination .first-destination, .destination .first-destination-reverse {
+      flex-direction: column-reverse;
+      margin-top: 2.5rem; }
+      .destination .first-destination .des-text, .destination .first-destination-reverse .des-text {
+        width: 100%; }
+      .destination .first-destination .images, .destination .first-destination-reverse .images {
+        width: 100%;
+        margin: 1.8rem 0; }
+        .destination .first-destination .images img, .destination .first-destination-reverse .images img {
+          height: 300px; }
+    .destination .first-destination-reverse {
+      flex-direction: column-reverse; } }
+
+/*# sourceMappingURL=style.css.map */
