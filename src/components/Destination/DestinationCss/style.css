@@ -3,6 +3,8 @@
   text-align: center; }
   .destination h1 {
     font-size: 4rem; }
+  .destination p {
+    font-size: 18px; }
   .destination .first-destination, .destination .first-destination-reverse {
     display: flex;
     align-items: center;

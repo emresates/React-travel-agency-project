@@ -44,6 +44,12 @@ $colorOrange: rgb(212, 154, 78);
       font-weight: bold;
       letter-spacing: 2px;
       color: $colorDark;
+      transition: .3s;
+
+      &:hover {
+        background-color: $colorBlue;
+        color: $colorWhite;
+      }
     }
 
     .hide {
@@ -65,6 +71,7 @@ $colorOrange: rgb(212, 154, 78);
   .hero .hero-text {
     h1 {
       padding: 10px 20px;
+      font-size: 5rem;
     }
     p {
         font-size: 1.1rem;

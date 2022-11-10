@@ -1,7 +1,9 @@
 .service-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  width: 70%;
-  margin: 4rem auto; }
+  width: 100%;
+  padding: 4rem 10rem; }
   .service-container h1 {
     text-align: center;
     font-size: 4rem;
@@ -11,13 +13,62 @@
     font-size: 20px; }
   .service-container img {
     position: absolute;
-    right: 0;
+    right: 20%;
     top: 30%;
     width: 400px;
     height: 400px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black; }
   .service-container ul li {
-    list-style: disc; }
+    list-style: disc;
+    font-size: 20px; }
+
+@media screen and (max-width: 1600px) {
+  .service-container {
+    padding: 3rem 5rem; }
+    .service-container img {
+      right: 5%; } }
+@media screen and (max-width: 1450px) {
+  .service-container img {
+    right: 10%; } }
+@media screen and (max-width: 1250px) {
+  .service-container {
+    font-size: 80%; }
+    .service-container img {
+      right: 5%; } }
+@media screen and (max-width: 1100px) {
+  .service-container img {
+    width: 350px;
+    height: 350px; }
+  .service-container ul {
+    width: 50%; } }
+@media screen and (max-width: 850px) {
+  .service-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; }
+    .service-container img {
+      position: relative;
+      width: 80%;
+      height: 500px;
+      margin: 1rem 2rem 1rem 6rem;
+      box-shadow: none; }
+    .service-container ul {
+      width: 90%; } }
+@media screen and (max-width: 550px) {
+  .service-container {
+    font-size: 70%; }
+    .service-container img {
+      width: 80%;
+      height: 400px;
+      margin: 1rem 2rem 1rem 6rem; } }
+@media screen and (max-width: 350px) {
+  .service-container {
+    font-size: 60%; }
+    .service-container img {
+      width: 80%;
+      height: 300px;
+      margin: 1rem 2rem 1rem 6rem; } }
 
 /*# sourceMappingURL=style.css.map */

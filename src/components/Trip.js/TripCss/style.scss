@@ -7,6 +7,10 @@
     font-size: 3rem;
   }
 
+  p {
+    font-size: 18px;
+  }
+
   .tripcard {
     margin-top: 3rem;
     display: flex;
@@ -57,6 +61,22 @@
 
         .t-image {
           height: 400px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .trip {
+    margin: 4rem 4rem;
+}
+}
+@media screen and (max-width: 850px) {
+  .trip {
+    .tripcard {
+      .t-card {
+        .t-image {
+          height: 300px;
         }
       }
     }

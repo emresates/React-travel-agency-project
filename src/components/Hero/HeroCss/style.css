@@ -30,7 +30,11 @@
       font-size: 1.1rem;
       font-weight: bold;
       letter-spacing: 2px;
-      color: #1a1a1a; }
+      color: #1a1a1a;
+      transition: .3s; }
+      .hero-text .show:hover {
+        background-color: #3bcaba;
+        color: #e8e8e8; }
     .hero-text .hide {
       display: none; }
 
@@ -41,7 +45,8 @@
 
 @media screen and (max-width: 560px) {
   .hero .hero-text h1, .hero-mid .hero-text h1 {
-    padding: 10px 20px; }
+    padding: 10px 20px;
+    font-size: 5rem; }
   .hero .hero-text p, .hero-mid .hero-text p {
     font-size: 1.1rem;
     padding: 0 0 2rem 0; }

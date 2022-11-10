@@ -1,18 +1,163 @@
 .about-container {
-    margin: 4rem 6rem;
-    text-align: start;
+  margin: 4rem 6rem;
+  text-align: start;
+
+  .about {
+    position: relative;
+    width: 100%;
+
+    img {
+      width: 450px;
+      box-shadow: 4px 4px 4px black;
+      transition: all 0.2s;
+      border-radius: 5px;
+
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: none;
+      }
+    }
 
     h1 {
-        padding-bottom: 1rem;
+      font-size: 4rem;
+      padding-bottom: 2rem;
+      text-align: center;
     }
 
-    p {
-        padding-bottom: 2rem;
+    h2 {
+      font-size: 3rem;
+      text-align: center;
     }
+
+    p,
+    ul {
+      font-size: 1.4rem;
+      width: 65%;
+    }
+
+    span {
+      font-weight: bold;
+    }
+
+    li {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+
+    .about-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .img3 {
+        width: 490px;
+      }
+    }
+    .about-row-reverse {
+      @extend .about-row;
+      flex-direction: row-reverse;
+
+      .img2 {
+        height: 500px;
+      }
+
+      .img4 {
+        width: 450px;
+      }
+
+      div {
+        width: 65%;
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 850px){
-    .about-container {
-        margin: 2rem 3rem;
+
+@media screen and (max-width: 1500px) {
+  .about-container {
+    margin: 2rem 3rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .about-container {
+    margin: 2rem 1rem;
+
+    img {
+      margin-right: 10px;
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    font-size: 90%;
+    p {
+      width: 100% !important;
+    }
+
+    img {
+      width: 60% !important;
+      margin: 10px auto;
+      height: 500px;
+    }
+  }
+
+  .about-row {
+    flex-direction: column-reverse !important;
+    width: 100%;
+  }
+
+  .about-row-reverse {
+    flex-direction: column;
+
+
+    div {
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .about {
+    img {
+      width: 40%;
+      height: 400px;
+      box-shadow: none !important;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    img {
+      width: 60%;
+      height: 300px;
+    }
+
+    .about-row-reverse {
+      ul {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-container {
+    font-size: 80%;
+    li {
+      font-size: 1.3rem;
+    }
+  }
+  .about {
+    img {
+      width: 60%;
+      height: 200px !important;
+    }
+  }
 }

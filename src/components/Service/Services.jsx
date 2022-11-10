@@ -4,7 +4,9 @@ import "./ServiceCss/style.css";
 function Services() {
   return (
     <div className="service-container">
-      <h1>Our Services</h1>
+      <div>
+        <h1>Our Services</h1>
+      </div>
       <img
         src="https://images.unsplash.com/photo-1568849676085-51415703900f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
         alt=""
@@ -18,40 +20,32 @@ function Services() {
         tremendous wealth of experience in the travel trade and are capable of
         fulfilling every needs of our guests’ requirement while traveling with
         us. We, as Trippy are specialized in providing all ground arrangements
-        you may need in Turkey such as;
-        <ul>
-          <li>World Wide & Domestic Flight Reservations.</li>
-          <li>Escorted Transfer Services.</li>
-          <li>Guided Tours.</li>
-          <li>City Sightseeings.</li>
-          <li>
-            Fair & Business Arrangements in Istanbul, Izmir, Antalya and Ankara.
-          </li>
-          <li>Seminars, Meetings and Congresses, Mice Groups.</li>
-          <li>
-            Tailor – Made Packages (cultural tours, pilgrimage, business travel,
-            advanture )
-          </li>
-          <li>Car Rentals.</li>
-          <li>Fly & Drive Packages.</li>
-          <li>VIP Services.</li>
-          <li>International Cuisine Arrangements.</li>
-          <li>Cruises, Yatch Tours.</li>
-
-          <li>Spa Packages, Healty Tourism.</li>
-          <li>Heritage Tours, Historical & Ancient Tours.</li>
-          <li>Adventure Holidays.</li>
-          <li>Religious Tours for ( Mouslims, Christians and Jewishes )</li>
-          <li>Honeymooner Packages.</li>
-
-          <li>Small Group Tours.</li>
-          <li>
-            Tailor Made Tours Combined Greece, Iran, Iraq, Georgia, Egypt,
-            Jordan, Cyprus, Bulgaria, Macedonia.
-          </li>
-          <li>…and much more that you can imagine !</li>
-        </ul>
-        <br />
+        you may need such as;
+      </p>
+      <ul>
+        <li>World Wide & Domestic Flight Reservations.</li>
+        <li>Escorted Transfer Services.</li>
+        <li>Guided Tours.</li>
+        <li>City Sightseeings.</li>
+        <li>Seminars, Meetings and Congresses, Mice Groups.</li>
+        <li>
+          Tailor – Made Packages (cultural tours, pilgrimage, business travel,
+          advanture )
+        </li>
+        <li>Car Rentals.</li>
+        <li>Fly & Drive Packages.</li>
+        <li>VIP Services.</li>
+        <li>International Cuisine Arrangements.</li>
+        <li>Cruises, Yatch Tours.</li>
+        <li>Spa Packages, Healty Tourism.</li>
+        <li>Heritage Tours, Historical & Ancient Tours.</li>
+        <li>Adventure Holidays.</li>
+        <li>Religious Tours for ( Mouslims, Christians and Jewishes )</li>
+        <li>Honeymooner Packages.</li>
+        <li>Small Group Tours.</li>
+        <li>…and much more that you can imagine !</li>
+      </ul>
+      <p>        
         We do our best to accommodate all language to our valuable guests’
         requests by providing guides conversant in English, German, French,
         Italian, Chinese, Japanese & so onauthorized by Turkey Government

@@ -14,11 +14,21 @@ $colorOrange: rgb(212, 154, 78);
     text-align: start;
     justify-content: space-between;
     flex-wrap: wrap;
+    user-select: none;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
 
     i {
       color: $colorWhite;
       font-size: 2rem;
       margin-left: 1rem;
+      transition: .2s;
 
       &:hover {
         color: $colorBlue;
@@ -40,12 +50,18 @@ $colorOrange: rgb(212, 154, 78);
       h4 {
         font-size: 1.3rem;
         padding: 1rem 0 0.8rem 0;
+        user-select: none;
       }
 
       a {
         color: $colorWhite;
         padding-bottom: 0.4rem;
         font-size: 1.1rem;
+        transition: .2s;
+
+        &:hover {
+          color: $colorBlue;
+        }
       }
     }
   }

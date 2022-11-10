@@ -4,6 +4,8 @@
   text-align: center; }
   .trip h1 {
     font-size: 3rem; }
+  .trip p {
+    font-size: 18px; }
   .trip .tripcard {
     margin-top: 3rem;
     display: flex;
@@ -39,5 +41,11 @@
         margin-bottom: 1.5rem; }
         .trip .tripcard .t-card .t-image {
           height: 400px; } }
+@media screen and (max-width: 1000px) {
+  .trip {
+    margin: 4rem 4rem; } }
+@media screen and (max-width: 850px) {
+  .trip .tripcard .t-card .t-image {
+    height: 300px; } }
 
 /*# sourceMappingURL=style.css.map */
